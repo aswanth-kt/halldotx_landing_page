@@ -1,9 +1,17 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, PlayCircle } from 'lucide-react'
+import bannerImage from "../assets/banner.png"
 
 
 const heroTags = ["Website Design", "Development", "Maintenance", "SEO", "Digital Marketing"]
+
+const heroHighlights = [
+  ["48h", "Launch Ready MVP"],
+  ["99%", "Client Satisfaction"],
+  [`<1s`, "Lightning Fast Performance"],
+  ["24/7", "Continuous Support"]
+]
 
 const Hero = () => {
   return (
@@ -67,6 +75,44 @@ const Hero = () => {
           </div>
 
         </motion.div>
+
+        {/* banner img section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1}}
+          transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
+          className='relative'
+        >
+
+          <div className='absolute insert-x-8 top-1/2 h-20 -translate-y-1/2 rounded-full bg-[rgba(105,243,238,0.16)] blur-3xl' />
+
+          <div 
+            className='rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-8'>
+            <img src={bannerImage} alt="banner image" />
+
+            <div className='mt-6 grid gap-3 sm:grid-cols-4'>
+              {heroHighlights.map(([value, label]) => (
+                <div
+                  key={label}
+                  className='border rounded-2xl border-white/10 bg-[rgba(3,10,12,0.72)] p-4 text-center'
+                >
+
+                  <p className="font-['Sora] text-2xl font-semibold text-[var(--teal-strong)]">
+                    {value}
+                  </p>
+
+                  <p className="mt-1 text-sm text-slate-400">
+                    {label}
+                  </p>
+
+                </div>
+              ))}
+            </div>
+            
+          </div>
+
+        </motion.div>
+
       </div>
     </section>
   )
