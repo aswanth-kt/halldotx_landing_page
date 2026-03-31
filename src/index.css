@@ -1,3 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  font-family: "Outfit, sans-serif";
+  background: 
+    radial-gradient(circle at top, rgba(43, 214, 209, 0.16), transparent 30%)
+    linear-gradient(180deg, #020303 0%, #050708 50%, #020303 100%);
+  --page-bg: #020303;
+  --panel: rgba(10, 14, 16, 0.68);
+  --panel-strong: rgba(10, 18, 20, 0.88);
+  --line: rgba(154, 255, 248, 0.14);
+  --teal: #69f3ee;
+  --teal-strong: #97fffb;
+  --text: #f4fffd;
+  --muted: #94aaa8
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(64, 206, 200, 0.12), transparent 25%),
+    radial-gradient(circle at 85% 10%, rgba(255, 255, 255, 0.06), transparent 20%),
+    radial-gradient(circle at 50% 100%, rgba(78, 255, 246, 0.08), transparent 25%),
+    var(--page-bg);
+  color: var(--text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
