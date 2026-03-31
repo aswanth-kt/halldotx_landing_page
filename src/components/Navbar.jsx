@@ -109,6 +109,14 @@ const Navbar = () => {
 
                 ))}
 
+                <a
+                  href="#contact"
+                  onClick={handleLinkClick}
+                  className="inline-flex w-full items-center justify-center rounded-full border border-[rgba(151,255,251,0.28)] bg-[linear-gradient(135deg,rgba(105,243,238,0.24),rgba(255,255,255,0.08))] px-5 py-3 text-sm font-semibold text-white shadow-[0_0_20px_rgba(92,239,233,0.18)] transition duration-300 hover:shadow-[0_0_30px_rgba(92,239,233,0.28)]"
+                >
+                  Start Project
+                </a>
+
               </div>
             </div>
         </div>
