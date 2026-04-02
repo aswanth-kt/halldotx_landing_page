@@ -1,4 +1,4 @@
-
+import { FaLinkedin, FaInstagram } from "react-icons/fa"
 
 const Contact = () => {
   return (
@@ -33,7 +33,7 @@ const Contact = () => {
              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
              aria-label="Linkedin"
             >
-             Linkedin
+             <FaLinkedin className="h-5 w-5" />
             </a>
 
             <a
@@ -43,7 +43,7 @@ const Contact = () => {
              className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
              aria-label="Instagram"
             >
-             Instagram
+             <FaInstagram className="h-5 w-5" />
             </a>
 
           </div>
