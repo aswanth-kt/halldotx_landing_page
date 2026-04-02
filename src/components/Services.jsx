@@ -6,8 +6,9 @@ import {
   Settings2, 
   Wrench
 } from 'lucide-react'
-import React from 'react'
 
+
+const MotionArticle = motion.article;
 
 const services = [
   {
@@ -69,7 +70,7 @@ const Services = () => {
             const Icon = service.icon;
 
             return (
-              <motion.article
+              <MotionArticle
                 key={service.title}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -102,7 +103,7 @@ const Services = () => {
                   {service.description}
                 </p>
 
-              </motion.article>
+              </MotionArticle>
             )
 
           })}

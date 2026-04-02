@@ -1,8 +1,9 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { ArrowRight, PlayCircle } from 'lucide-react'
 import bannerImage from "../assets/banner.png"
 
+
+const Motion = motion;
 
 const heroTags = ["Website Design", "Development", "Maintenance", "SEO", "Digital Marketing"]
 
@@ -20,7 +21,7 @@ const Hero = () => {
       className='px-4 pb-2 pt-16 sm:px-6 lg:px-8 lg:pb-32 lg:pt-20'
     >
       <div className='mx-auto grid max-w-7xl gap-16 lg:grid-cols-[1.08fr_0.92fr] lg:items-center'>
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, y:32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.85, ease: [0.22, 1, 0.36, 1] }}
@@ -74,10 +75,10 @@ const Hero = () => {
 
           </div>
 
-        </motion.div>
+        </Motion.div>
 
         {/* banner img section */}
-        <motion.div
+        <Motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1}}
           transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1], delay: 0.08 }}
@@ -111,7 +112,7 @@ const Hero = () => {
             
           </div>
 
-        </motion.div>
+        </Motion.div>
 
       </div>
     </section>
