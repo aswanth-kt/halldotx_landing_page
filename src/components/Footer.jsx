@@ -1,6 +1,8 @@
 
 const Footer = () => {
 
+  const year = new Date().getFullYear()
+
   return (
     <footer className="px-4 pb-10 pt-6 sm:px-6 lg:px-8">
 
@@ -21,7 +23,7 @@ const Footer = () => {
         </div>
 
         <p>
-          © 2026 Hall Dotx. All rights reserved.
+          © {year} Hall Dotx. All rights reserved.
         </p>
 
       </div>
