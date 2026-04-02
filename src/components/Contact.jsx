@@ -7,7 +7,7 @@ const Contact = () => {
       className="px-4 py-24 sm:px-6 lg:px-8"
     >
       <div
-        className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_30px_90px_rgba(0,0,0,0.3)] backdrop-blur-xl sm:p-8 lg:grid-clos-[0.88fr_1.12fr] lg:p-10"
+        className="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_30px_90px_rgba(0,0,0,0.3)] backdrop-blur-xl sm:p-8 lg:grid-cols-[0.88fr_1.12fr] lg:p-10"
       >
 
         <div>
@@ -49,6 +49,50 @@ const Contact = () => {
           </div>
 
         </div>
+
+        <form className="grid gap-4">
+
+          <label className="grid gap-2">
+            <span className="text-sm font-medium text-slate-300">
+              Name
+            </span>
+            <input 
+              type="text" 
+              placeholder="Your name"
+              className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
+            />
+          </label>
+
+          <label className="grid gap-2">
+            <span className="text-sm font-medium text-slate-300">
+              Email
+            </span>
+            <input 
+              type="email" 
+              placeholder="you@company.com"
+              className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
+            />
+          </label>
+
+          <label className="grid gap-2">
+            <span className="text-sm font-medium text-slate-300">
+              Message
+            </span>
+            <textarea 
+              rows="6"
+              placeholder="Tell us about your project"
+              className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
+            />
+          </label>
+
+          <button
+            type="submit"
+            className="mt-2 inline-flex items=center justify-center rounded-full border border-[rgba(151,255,251,0.2)] bg-[linear-gradient(135deg,#6af5ef,#1c807d)] px-6 py-3.5 font-semibold text-slate-950 shadow-[0_0_28px_rgba(106,245,239,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow[0_0_40px_rgba(106,245,239,0.34)]"
+          >
+            Send Message
+          </button>
+
+        </form>
 
       </div>
     </section>
