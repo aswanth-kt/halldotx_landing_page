@@ -1,4 +1,3 @@
-// import { Linkedin } from "lucide-react";
 
 
 const Contact = () => {
@@ -31,11 +30,20 @@ const Contact = () => {
              href="https://www.linkedin.com/company/hall-dot-x/posts/?feedView=all"
              target="_blank"
              rel="noreferrer"
-             className="inline-flex h-12 w-12 items-center justify-center"
+             className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
              aria-label="Linkedin"
             >
-             {/* <Linkedin className='h-12 w-12' /> */}
              Linkedin
+            </a>
+
+            <a
+             href="https://www.instagram.com/halldotx?igsh=MzNxZXI0MGh6YWJn"
+             target="_blank"
+             rel="noreferrer"
+             className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
+             aria-label="Instagram"
+            >
+             Instagram
             </a>
 
           </div>
