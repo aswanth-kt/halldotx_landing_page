@@ -1,6 +1,12 @@
-import { FaLinkedin, FaInstagram } from "react-icons/fa"
+import { FaLinkedin, FaInstagram, FaWhatsapp, FaFacebook, } from "react-icons/fa"
+import { IoMail } from "react-icons/io5"
 
 const Contact = () => {
+
+  const phoneNum = "7560990989";
+  const message = encodeURIComponent("Hello Hall Dotx Technologies! I'm interested in your web services. Could you provide more information on how you can help my business?");
+  const whatsappUrl = `https://wa.me/${phoneNum}?text=${message}`;
+
   return (
     <section
       id="contact"
@@ -44,6 +50,36 @@ const Contact = () => {
              aria-label="Instagram"
             >
              <FaInstagram className="h-5 w-5" />
+            </a>
+
+            <a
+             href={whatsappUrl}
+             target="_blank"
+             rel="noreferrer"
+             className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
+             aria-label="Whatsapp"
+            >
+             <FaWhatsapp className="h-5 w-5" />
+            </a>
+
+            <a
+             href="mailto:hdxcareers@gmail.com"
+             target="_blank"
+             rel="noreferrer"
+             className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
+             aria-label="Email"
+            >
+             <IoMail className="h-5 w-5" />
+            </a>
+
+            <a
+             href="#"
+             target="_blank"
+             rel="noreferrer"
+             className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/6 text-slate-100 transition duration-300 hover:border-[rgba(151,255,251,0.22)] hover:text-[var(--teal-strong)]"
+             aria-label="Facebook"
+            >
+             <FaFacebook className="h-5 w-5" />
             </a>
 
           </div>
