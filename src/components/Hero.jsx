@@ -89,11 +89,11 @@ const Hero = () => {
           <div className='absolute insert-x-8 top-1/2 h-20 -translate-y-1/2 rounded-full bg-[rgba(105,243,238,0.16)] blur-3xl' />
 
           <div 
-            className='rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-8'>
+            className='rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-5'>
 
             {/* <img src={bannerImage} alt="banner image" /> */}
 
-            <video autoPlay muted loop >
+            <video autoPlay muted loop className='rounded-2xl'>
               <source src={bannerVideo} type='video/mp4'/>
               Your browser does not support the video tag.
             </video>
