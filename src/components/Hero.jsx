@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { ArrowRight, PlayCircle } from 'lucide-react'
 import bannerImage from "../assets/banner.png"
+import bannerVideo from "../assets/bannerVideo.mp4"
 
 
 const Motion = motion;
@@ -89,7 +90,13 @@ const Hero = () => {
 
           <div 
             className='rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))] p-6 shadow-[0_25px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl sm:p-8'>
-            <img src={bannerImage} alt="banner image" />
+
+            {/* <img src={bannerImage} alt="banner image" /> */}
+
+            <video autoPlay muted loop >
+              <source src={bannerVideo} type='video/mp4'/>
+              Your browser does not support the video tag.
+            </video>
 
             <div className='mt-6 grid gap-3 sm:grid-cols-4'>
               {heroHighlights.map(([value, label]) => (
