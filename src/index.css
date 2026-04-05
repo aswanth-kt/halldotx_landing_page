@@ -17,7 +17,9 @@
   --teal: #69f3ee;
   --teal-strong: #97fffb;
   --text: #f4fffd;
-  --muted: #94aaa8
+  --muted: #94aaa8;
+  --error: #ef5050;
+  --success: #08ab23;
 }
 
 * {

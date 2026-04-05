@@ -1,7 +1,44 @@
+import { useRef, useState } from "react";
 import { FaLinkedin, FaInstagram, FaWhatsapp, FaFacebook, } from "react-icons/fa"
 import { IoMail } from "react-icons/io5"
+import { sendEmail } from "../services/emailService";
 
 const Contact = () => {
+
+  const formRef = useRef();
+  const [loading, setLoading] = useState(false);
+  const [infoMessage, setInfoMessage] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+
+      setLoading(true);
+
+      const res = await sendEmail(formRef.current);
+
+      console.log("Email sent res:", res);
+
+      if (res.status === 200) {
+        setInfoMessage({
+          msg: "Message sent successfully",
+          color: "green"
+        })
+      }
+      
+    } catch (error) {
+      console.error("Error at email send:", error);
+      setInfoMessage({
+        msg: error || "Message not sent",
+        color: "red"
+      })
+
+    } finally {
+      setLoading(false)
+      e.target.reset()
+    }
+  }
 
   const phoneNum = "7560990989";
   const message = encodeURIComponent("Hello Hall Dotx Technologies! I'm interested in your web services. Could you provide more information on how you can help my business?");
@@ -86,7 +123,11 @@ const Contact = () => {
 
         </div>
 
-        <form className="grid gap-4">
+        <form 
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="grid gap-4"  
+        >
 
           <label className="grid gap-2">
             <span className="text-sm font-medium text-slate-300">
@@ -94,6 +135,8 @@ const Contact = () => {
             </span>
             <input 
               type="text" 
+              name="name"
+              required
               placeholder="Your name"
               className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
             />
@@ -105,6 +148,8 @@ const Contact = () => {
             </span>
             <input 
               type="email" 
+              name="email"
+              required
               placeholder="you@company.com"
               className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
             />
@@ -115,6 +160,8 @@ const Contact = () => {
               Message
             </span>
             <textarea 
+              name="message"
+              required
               rows="6"
               placeholder="Tell us about your project"
               className="rounded-2xl border border-white/10 bg-[rgba(3,10,12,0.8)] px-4 py-3.5 text-white outline-none transition duration-300 placeholder:text-slate-500 focus:border-[rgba(151,255,251,0.35)] focus:shadow-[0_0_0_4px_rgba(105,243,238,0.08)]"
@@ -123,10 +170,17 @@ const Contact = () => {
 
           <button
             type="submit"
+            disabled={loading}
             className="mt-2 inline-flex items=center justify-center rounded-full border border-[rgba(151,255,251,0.2)] bg-[linear-gradient(135deg,#6af5ef,#1c807d)] px-6 py-3.5 font-semibold text-slate-950 shadow-[0_0_28px_rgba(106,245,239,0.22)] transition duration-300 hover:-translate-y-0.5 hover:shadow[0_0_40px_rgba(106,245,239,0.34)]"
           >
-            Send Message
+            {loading ? "Message Sending..." : "Send Message"}
           </button>
+
+          <p
+            className={`flex ${infoMessage?.color === "red" ? "text-red-500" : "text-green-500"} items-center justify-center`}
+          >
+            {infoMessage?.msg}
+          </p>
 
         </form>
 
