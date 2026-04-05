@@ -1,16 +1,95 @@
-# React + Vite
+# 🚀 Landing Page Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Overview
 
-Currently, two official plugins are available:
+This is a modern and responsive landing page built using **React (Vite)** and **Tailwind CSS**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A new website was designed for **Hall Dotx**, focusing on clean layout, smooth animations, and better user experience.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+* React (Vite)
+* Tailwind CSS (v3)
+* Framer Motion (for animations)
+* React Icons (for social media icons)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+* Fully responsive design (mobile, tablet, desktop)
+* Clean and modern UI
+* Smooth animations using Framer Motion
+* Animated Hero section (video instead of static image)
+* Social media integration (WhatsApp, Facebook, Email)
+* Reusable component-based structure
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+```
+git clone https://github.com/aswanth-kt/halldotx_landing_page.git
+```
+
+2. Navigate to the project folder
+
+```
+cd halldotx_landing_page
+```
+
+3. Install dependencies
+
+```
+npm install
+```
+
+4. Run the project
+
+```
+npm run dev
+```
+
+---
+
+## 🎯 Sections Included
+
+* Navbar
+* Hero Section (with animated video)
+* Services Section
+* About Section
+* Contact Section (form + social links)
+* Footer
+
+---
+
+## 📌 Future Improvements
+
+* Add backend for contact form
+* Improve SEO optimization
+* Add more interactive animations
+
+---
+
+## 🔗 Links
+
+* Live Demo: https://halldotx.vercel.app
+* Video Demo: https://youtu.be/e3EJO6Nx0RY
+
+---
+
+## 👨‍💻 Author
+
+**Aswanth KT**
+
+---
+
+## 📄 License
+
+This project is open-source and free to use.
+
+---
