@@ -89,6 +89,7 @@ const Hero = () => {
           <div className='absolute insert-x-8 top-1/2 h-20 -translate-y-1/2 rounded-full bg-[rgba(105,243,238,0.16)] blur-3xl' />
 
           <video autoPlay muted loop 
+            onContextMenu={(e) => e.preventDefault()} // disable right click menu
             className='rounded-[2rem]'
           >
             <source src={bannerVideo} type='video/mp4'/>

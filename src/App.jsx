@@ -9,8 +9,9 @@ import Services from './components/Services'
 
 const MotionDiv = motion.div;
 
-function App() {
 
+function App() {
+  
   const fadeUp = {
     hidden: { opacity: 0, y: 28 },
     show: {
@@ -54,7 +55,7 @@ function App() {
         viewport={{ once: true, amount: 0.2 }}
         variants={fadeUp}
       >
-\
+
         <Features />
 
       </MotionDiv>
