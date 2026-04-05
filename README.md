@@ -56,6 +56,20 @@ npm run dev
 
 ---
 
+## 🔐 Environment Variables
+
+Create a .env file in the root directory and add:
+
+```
+VITE_EMAIL_SERVICE_ID=your_service_id
+VITE_EMAIL_TEMPLATE_ID=your_template_id
+VITE_EMAIL_PUBLIC_KEY=your_public_key
+```
+
+EmailJs.com Link: https://dashboard.emailjs.com
+
+---
+
 ## 🎯 Sections Included
 
 * Navbar
