@@ -1,30 +1,50 @@
-# 🚀 Landing Page Project
+# 🚀 Hall Dotx Landing Page
+
+A modern, responsive landing page built for **Hall Dotx**, focused on clean design, smooth animations, and an engaging user experience.
+
+---
 
 ## 📌 Overview
 
-This is a modern and responsive landing page built using **React (Vite)** and **Tailwind CSS**.
-
-A new website was designed for **Hall Dotx**, focusing on clean layout, smooth animations, and better user experience.
+This project is a fully responsive landing page developed using **React (Vite)** and **Tailwind CSS**. It highlights modern UI practices, animation techniques, and real-world features like email integration.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* React (Vite)
-* Tailwind CSS (v3)
-* Framer Motion (for animations)
-* React Icons (for social media icons)
+- React (Vite)
+- Tailwind CSS (v3)
+- Framer Motion
+- React Icons
+- EmailJS (for contact form)
 
 ---
 
 ## ✨ Features
 
-* Fully responsive design (mobile, tablet, desktop)
-* Clean and modern UI
-* Smooth animations using Framer Motion
-* Animated Hero section (video instead of static image)
-* Social media integration (WhatsApp, Facebook, Email)
-* Reusable component-based structure
+- Responsive design (mobile, tablet, desktop)
+- Clean and modern UI
+- Smooth animations using Framer Motion
+- Animated hero section (video-based)
+- Social media integration (WhatsApp, Facebook, Email)
+- Reusable component-based architecture
+
+### 📧 Contact Form
+
+- Sends messages directly to the Hall Dotx team
+- Automatic reply sent to users after submission
+- Powered by EmailJS (no backend required)
+
+---
+
+## 🎯 Sections
+
+- Navbar
+- Hero Section (with animated video)
+- Services Section
+- About Section
+- Contact Section (form + social links)
+- Footer
 
 ---
 
