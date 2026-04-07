@@ -5,6 +5,7 @@ import Footer from './components/Footer'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Services from './components/Services'
+import CustomCursor from './components/cursor/CustomCursor'
 
 
 const MotionDiv = motion.div;
@@ -26,6 +27,9 @@ function App() {
 
   return (
     <>
+
+      <CustomCursor />
+      
       <Navbar />
 
       <MotionDiv
